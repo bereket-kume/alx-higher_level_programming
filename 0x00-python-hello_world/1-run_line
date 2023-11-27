@@ -1,2 +1,11 @@
-#!/usr/bin/python3
-python3 -c "$PYCODE"
+#!/bin/bash
+pyfile=$PYFILE
+if [ -z "$pyfile" ]; then
+  echo "Error: PYFILE environment variable is not set."
+    exit 1
+    fi
+    if [ ! -f "$pyfile" ]; then
+      echo "Error: Python file '$pyfile' does not exist."
+        exit 1
+        fi
+ python3 "$pyfile"
