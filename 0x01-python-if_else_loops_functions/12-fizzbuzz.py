@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 def fizzbuzz():
+    o = []
     for i in range(100 + 1):
         if i % 3 == 0 and i % 5 == 0:
-            print('FizzBuzz', end=' ')
+            o.append('FizzBuzz')
         elif i % 3 == 0:
-            print('Fizz', end=' ')
+            o.append('Fizz')
         elif i % 5 == 0:
-            print("Buzz", end=' ')
+            o.append("Buzz")
         else:
-            print(i)
+            o.append(str(i))
+    print(' '.join(o))
