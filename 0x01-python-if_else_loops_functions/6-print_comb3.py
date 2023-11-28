@@ -7,6 +7,6 @@ for i in range(100):
         continue
     else:
         val.append(i)
-print(", ".join(str(x).zfill(2) for x in val))
+print("{}".format(", ".join(str(x).zfill(2) for x in val)))
 
 
