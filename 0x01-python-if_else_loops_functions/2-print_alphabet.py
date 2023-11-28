@@ -1,3 +1,5 @@
 #!/usr/bin/python3
+a = ''
 for i in range(ord('a'), ord('z') + 1):
-    print(chr(i), end = '')
+    a += chr(i)
+print("{}".format(a))
