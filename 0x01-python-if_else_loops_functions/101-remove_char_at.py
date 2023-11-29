@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
     x = []
-    if n <= len(str):
+    if n >= 0 and n < len(str):
         for i in str:
             x.append(i)
         del x[n]
+        return ."".join(x)
     else:
-        print("{}".format(str))
-    print("{}".format("".join(x)))
+        return str
