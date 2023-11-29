@@ -5,6 +5,6 @@ def remove_char_at(str, n):
         for i in str:
             x.append(i)
         del x[n]
-        return ."".join(x)
+        return "".join(x)
     else:
         return str
