@@ -1,18 +1,12 @@
-#!/usr/bin/python3
 import sys
+
 if __name__ == "__main__":
-    exit()
-mess = "{:d} argument"
-arglen = len(sys.argv) - 1
-if arglen == 0:
-    mess += "s."
-elif arglen == 1:
-    mess += ":"
-else:
-    mess += "s:"
-print(mess.format(arglen))
-i = 0
-for arg in sys.argv:
-    if i != 0:
-        print("{:d}: {}".format(i, arg))
-    i += 1
+    arglen = len(sys.argv) - 1
+    if arglen == 0:
+        print("0 arguments.")
+    elif arglen == 1:
+        print("1 argument:")
+    else:
+        print("{} arguments:".format(arglen))
+    for i in range(1, len(sys.argv)):
+        print("{}: {}".format(i, sys.argv[i]))
