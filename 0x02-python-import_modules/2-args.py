@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import sys
-if __name == "__main__":
+if __name__ == "__main__":
     exit()
-mess = "{} argument"
+mess = "{:d} argument"
 arglen = len(sys.argv) - 1
 if arglen == 0:
     mess += "s."
@@ -14,5 +14,5 @@ print(mess.format(arglen))
 i = 0
 for arg in sys.argv:
     if i != 0:
-        print("{:d} {}".format(i, arg)
+        print("{:d}: {}".format(i, arg))
     i += 1
