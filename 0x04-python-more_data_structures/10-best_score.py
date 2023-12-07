@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    sorted_dict = sorted(a_dictionary.copy())
-    max_value = sorted_dict[-1]
-    return max_value
+    if a_dictionary:
+        max_dict = max(a_dictionary, key = a_dictionary.get)
+        return max_dict
+    else:
+        return None
