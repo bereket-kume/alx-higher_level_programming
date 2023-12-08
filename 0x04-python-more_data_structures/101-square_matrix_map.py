@@ -6,6 +6,6 @@ def square_matrix_map(matrix=[]):
         return n ** 2
 
     value = [
-           list(map(add, i)) for i in new_matrix
+            list(map(lambda i: list(map(add, i)), new_matrix))
            ]
     return value
