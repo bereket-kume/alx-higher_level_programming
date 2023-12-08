@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
             'M': 1000
             }
     d_sum = 0
-    length = len(roman_string) 
+    length = len(roman_string)
     for i in range(length):
         if i < length - 1 and m_d[roman_string[i]] < m_d[roman_string[i + 1]]:
             d_sum -= m_d[roman_string[i]]
