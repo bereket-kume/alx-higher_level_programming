@@ -6,10 +6,12 @@ class that define square
 
 class Square:
     """
-    Defines a square
+    Defines a square class
     """
     def __init__(self, size):
         """
-        Initialises the data
+         Initializes a Square instance
+         Args:
+            size (int): The size of the square
         """
         self.__size = size
