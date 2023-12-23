@@ -8,7 +8,7 @@ class Square:
     """
     This class represents a square
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Initializes a Square instance
 
@@ -16,6 +16,7 @@ class Square:
             size (int): The size of the square (default 0)
         """
         self.__size = size
+        self.position = position
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
@@ -59,3 +60,4 @@ class Square:
                 for j in range(self.__size):
                     print("#", end="")
                 print()
+
