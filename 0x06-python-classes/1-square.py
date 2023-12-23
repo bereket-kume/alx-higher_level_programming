@@ -12,4 +12,4 @@ class Square:
         """
         Initialises the data
         """
-        self.size = size
+        self.__size = size
