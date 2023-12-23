@@ -8,7 +8,7 @@ class Square:
     """
     This class represents a square
     """
-    def __init__(self, size=0):
+    def __in:it__(self, size=0):
         """
         Initializes a Square instance
 
@@ -20,22 +20,7 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-     @property
-     def size(self):
-       """
-       getter method
-       """
-       return self.__size
-    @size.setter
-    def size(self, value):
-      """
-      setter method
-      """
-      self.__size = value
-      if not isinstance(size, int):
-        raise TypeError("size must be an integer")
-      if size < 0:
-            raise ValueError("size must be >= 0")
+            
 
     def area(self):
         """
@@ -45,3 +30,20 @@ class Square:
             int: The area of the square
         """
         return self.__size ** 2
+
+    @property
+    def size(self):
+       """
+       getter method
+       """
+       return self.__size
+    @size.setter
+    def size(self, value):
+      """
+      setter method
+      """
+        self.__size = value
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
