@@ -8,7 +8,7 @@ class Square:
     """
     This class represents a square
     """
-    def __in:it__(self, size=0):
+    def __init__(self, size=0):
         """
         Initializes a Square instance
 
@@ -33,15 +33,15 @@ class Square:
 
     @property
     def size(self):
-       """
-       getter method
-       """
-       return self.__size
+        """
+        getter method
+        """
+        return self.__size
     @size.setter
     def size(self, value):
-      """
-      setter method
-      """
+        """
+        setter method
+        """
         self.__size = value
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
