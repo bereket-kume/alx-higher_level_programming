@@ -60,4 +60,14 @@ class Square:
                 for j in range(self.__size):
                     print("#", end="")
                 print()
+    @property
+    def position(self):
+        """getter method"""
+        return self.__postion
+    @position.setter
+    def position(self, value):
+        """setter method"""
+        if type(value) != tuple or len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__postion = value
 
