@@ -8,6 +8,7 @@ class Rectangle:
     """ define Reactangle class """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """ intialize a Rectangle instance"""
@@ -51,7 +52,8 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ("")
-        return "\n".join(["#" * self.__width] * self.__height)
+        symbol = str(Rectangle.print_symbol)
+        return "\n".join([symbol * self.__width] * self.__height)
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
