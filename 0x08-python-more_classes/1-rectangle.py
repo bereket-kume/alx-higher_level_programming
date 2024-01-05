@@ -8,8 +8,8 @@ class Rectangle:
     """ define Reactangle class """
     def __init__(self, width=0, height=0):
         """ intialize a Rectangle instance"""
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
