@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this module contian class Rectangle 
+this module contian class Rectangle
 """
 
 
