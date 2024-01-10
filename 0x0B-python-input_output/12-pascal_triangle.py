@@ -6,7 +6,7 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    a= [[]for _ in range(n)]
+    a = [[]for _ in range(n)]
     for i in range(n):
         for j in range(i + 1):
             if j < i:
