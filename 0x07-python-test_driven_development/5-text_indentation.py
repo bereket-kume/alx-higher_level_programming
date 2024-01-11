@@ -8,7 +8,6 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     result = ""
-    prev_char = ""
 
     for char in text:
         if char in ".?:":
