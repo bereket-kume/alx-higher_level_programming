@@ -3,15 +3,17 @@
 
 
 def text_indentation(text):
-    """text indentation module"""
-
+    """Prints a text with 2 new lines after each '.', '?', and ':' character"""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    for delimeter in "?:.":
-        text = (delimeter + "\n\n").join([index.strip(" ") for index in text.split(delimeter)])
-    return text
+    result = ""
+    prev_char = ""
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("tests/5-text_indentation.txt")
+    for char in text:
+        if char in ".?:":
+            result += char + "\n\n"
+        else:
+            result += char
+
+    print("\n".join(line.strip() for line in result.split("\n")))
