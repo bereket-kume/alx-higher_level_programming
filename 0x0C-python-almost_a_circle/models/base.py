@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """module for base"""
 from json import dumps, loads
+import csv
 
 
 class Base:
@@ -57,7 +58,7 @@ class Base:
         except FileNotFoundError:
             return []
         return ins_list
-     @classmethod
+    @classmethod
     def save_to_file_csv(cls, list_objs):
         '''Saves object to csv file.'''
         from models.rectangle import Rectangle
