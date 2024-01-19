@@ -5,7 +5,10 @@ import csv
 
 
 class Base:
+    """base class"""
+
     __nb_objects = 0
+
     def __init__(self, id=None):
         if id is not None:
             self.id = id
@@ -26,13 +29,13 @@ class Base:
             list_objs = [i.to_dictionary() for i in list_objs]
             with open("{}.json".format(cls.__name__), "w", encoding="utf-8") as f:
                 f.write(cls.to_json_string(list_objs))
-    
+
     def from_json_string(json_string):
         if json_string is None and not json_string:
             return "[]"
         else:
             return loads(json_string)
-    
+
     @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Rectangle":
@@ -43,7 +46,7 @@ class Base:
             return None
         dummy.update(**dictionary)
         return dummy
-    
+
     @classmethod
     def load_from_file(cls):
         filename = cls.__name__ + "json"
@@ -58,6 +61,7 @@ class Base:
         except FileNotFoundError:
             return []
         return ins_list
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         '''Saves object to csv file.'''
