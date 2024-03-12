@@ -1,5 +1,5 @@
--- this is the script that lists all records of the table 
--- second_table of the database hbtn_0c_0 in your MySQL server.
+-- Lists all records of the table second_table.
+-- Records are ordered by descending score.
 SELECT `score`, `name`
-FROM `hbtn_0c_0`
+FROM `second_table`
 ORDER BY `score` DESC;
