@@ -1,2 +1,2 @@
 --list all existing tables.
-SHOW TABLES
+SHOW TABLES;
