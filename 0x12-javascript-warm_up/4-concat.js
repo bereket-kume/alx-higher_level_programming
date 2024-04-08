@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 // script that prints two arguments passed to it
 
 const myvar = process.argv[2];
