@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// print argument
+// print argument depend on it length
 
 if (process.argv.length === 2) {
   console.log('No argument');
