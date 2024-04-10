@@ -1,12 +1,12 @@
-#!/usr/bin/node
-class Reactangle {
-    constructor (w, h) {
-    if (w < 0 || h < 0){
-        return {}
+class Rectangle {
+  constructor (w, h) {
+    if (w <= 0 || h <= 0 || isNaN(w) || isNaN(h)) {
+      return {};
     }
-      this.width = w;
-      this.height = h;
-    }
+
+    this.width = w;
+    this.height = h;
   }
-  module.exports = Reactangle;
-  
+}
+
+module.exports = Rectangle;
