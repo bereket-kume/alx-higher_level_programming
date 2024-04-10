@@ -1,8 +1,7 @@
 #!/usr/bin/node
-class Reactangle {
+module.exports = class Reactangle {
   constructor (w, h) {
     this.width = w;
     this.height = h;
   }
 }
-module.exports = Reactangle;
