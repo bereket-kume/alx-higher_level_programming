@@ -1,5 +1,5 @@
 #!/usr/bin/node
-class Reactangle{
+class Reactangle {
 
 }
 module.exports = Reactangle;
