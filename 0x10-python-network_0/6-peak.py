@@ -1,7 +1,14 @@
 #!/usr/bin/python3
+"""
+    python code that used to solve problem find peak
+    using binary search algorithm
+"""
 
 
 def find_peak(list_of_integers):
+    """
+    find peak function
+    """
     if not list_of_integers:
         return None
     left = 0
@@ -15,4 +22,4 @@ def find_peak(list_of_integers):
         else:
             right = mid
 
-    return list_of_integers[left]
+    return list_of_integers[left] 
