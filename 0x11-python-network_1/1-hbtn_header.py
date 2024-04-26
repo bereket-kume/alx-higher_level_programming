@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import sys
 import urllib
-import urllib.request
 
 url = sys.argv[1]
 with urllib.request.urlopen(url) as response:
