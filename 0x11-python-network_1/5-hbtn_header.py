@@ -2,9 +2,13 @@
 """
     Python script that takes in a URL, sends a request to the URL
 """
-import sys
 import requests
+import sys
 
 url = sys.argv[1]
+
 response = requests.get(url)
-print(response.headers.get('X-Request-Id'))
+
+x_request_id = response.headers.get('X-Request-Id')
+
+print(x_request_id)
