@@ -3,8 +3,7 @@
     start link class to table in database
 """
 from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import declarative_base, relationship
 from relationship_city import Base, City
 
 Base = declarative_base()
